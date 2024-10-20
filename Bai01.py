@@ -6,22 +6,26 @@ n = int(input("n = "))
 # *****
 # *****
 # *****
-print(("*"*n + "\n")*n)
+print(("*" * n + "\n") * n)
 # n = 5
 # *
 # **
 # ***
-# ****print
-# *****
-for i in range(1,n):
-    print(("*"*i +"\n"))
-# n = 5
-#  *
-#  **
-#  ***
 # ****
 # *****
+for i in range(1, n + 1):
+    print(("*" * i + "\n"))
 # n = 5
-#  *
-# ***
+#     *
+#    **
+#   ***
+#  ****
 # *****
+for i in range(1, n + 1):
+    print(" " * (n - i) + "*" * i + "\n")
+# n = 5
+#   *
+#  ***
+# *****
+for i in range(1, n + 1, 2):
+    print(("*" * i + "\n").center(n))

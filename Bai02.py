@@ -25,7 +25,6 @@ k = int(input("k = "))
 for i in set(a):
     if a.count(i) == k:
         print(f"Số {i} có {k} lần xuất hiện")
-    
 #Sắp xếp mảng
 #Tăng dần
 a.sort()
